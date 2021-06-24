@@ -2,7 +2,7 @@
 
 \usepackage{url}
 
-\usepackage[backend=bibtex]{biblatex}
+\usepackage[backend=bibtex,citestyle=numeric-comp]{biblatex}
 \addbibresource{plan,erc}
 
 
@@ -64,7 +64,7 @@ One of the main problems in this area is that the decentralized solutions are ty
 
 One of the main problems of cryptocurrencies is their unstable exchange rate with some standard currency (the so-called \emph{fiat money}). The term \emph{Decentralized Finance} \cite{enwiki:1030159409} (often abbreviated as: \emph{DeFi}) refers to blockchain solutions that address this problem. The most notable examples are the \emph{stable coins} \cite{Clark2020}, where the internal currencies of a given blockchain are exchangeable with the fiat money at a fixed rate. There are several interesting proposals on how to construct such coins, most of them coming from blockchain startups and lacking full formal security analysis. We will work on improving these protocols and understanding their security properties (possibly using the tools developed in \ref{sec:verif}).
 	
-DeFi protocols can also be used as a replacement for financial institutions such as the stock market. One of the problems with this approach are the so-called \emph{front-running} attacks \cite{Eskandari2019}, where the miners (or other powerful users) constantly monitor the messages sent to the blockchain and choose their transactions depending on the transactions of the other users. Unfortunately, most of the blockchain solutions allow such powerful participants to publish their place their transactions on the blockchain \emph{before} the original transactions appear there. This can lead to considerable financial gains of such of the honest participants. We will work on addressing this problem in real life using tools from cryptography such as cryptographic commitment schemes (see, e.g., \cite{Goldreich2001}) and timed-release cryptography \cite{10.5555/888615}.
+DeFi protocols can also be used as a replacement for financial institutions such as the stock market. One of the problems with this approach are the so-called \emph{front-running} attacks \cite{Eskandari2019}, where the miners (or other powerful users) constantly monitor the messages sent to the blockchain and choose their transactions depending on the transactions of the other users. Unfortunately, most of the blockchain solutions allow such powerful participants to publish their place their transactions on the blockchain \emph{before} the original transactions appear there. This can lead to considerable financial gains of such of the honest participants. We will work on addressing this problem in real life using tools from cryptography such as cryptographic commitment schemes (see, e.g., \cite{Goldreich2001}) and timed-release cryptography~\cite{10.5555/888615}.
 
 \subsection{Proofs-of-Space in practice}\label{sec:PoSpace}
 
@@ -99,7 +99,6 @@ We also actively collaborate with universities and research institutions, such a
 We will be actively engaging in education. This will be primarily done by interaction with the MSc and PhD students of the Faculty of Mathematics, Informatics and Mechanics of the University of Warsaw, where the PI is a professor. We will also interact with students of other educational institutions in Warsaw, in particular the Warsaw University of Technology and Polish-Japanese Academy of Information Technology, and we will be open to collaboration with students from other Polish universities (in particular: the Jagiellonian University in Cracow). The PI has personal contacts in all of these institutions, which will facilitate access to good students. This will be done by teaching courses, giving seminars, and offering supervision of master and PhD theses. In particular, we will run a weekly group seminar that will be open to the general audience.
 
 Our results will be communicated to the academic community via publications and talks at conferences, workshops, and schools. We will also disseminate knowledge to the society by participating in conferences with industry and policymakers in Poland and abroad (the PI has a vast experience with this, including talks at the Polish Ministry of Finance, the German Federal Bank, and conferences such as the \emph{European Forum for Science, Research and Innovation}, \emph{Digital Money \& Blockchain Forum}, \emph{Forum of Information and Communication Technology}, and others).
-
 We will also maintain a webpage (possibly jointly with the webpage of the group at the University of Warsaw, \url{www.crypto.edu.pl}), and will be active in social media.
 
 
