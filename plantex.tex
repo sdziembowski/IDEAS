@@ -1,5 +1,14 @@
 \documentclass{article}
 
+\usepackage{url}
+
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{plan}
+
+
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[T1]{fontenc}
+
 \usepackage{fullpage}
 
 \usepackage{titling}
@@ -22,10 +31,20 @@
 	
 \maketitle
 
+
+\emph{Distributed cryptography} is a technology developed since the 1980s \cite{DBLP:conf/focs/Yao86,DBLP:conf/stoc/GoldreichMW87,DBLP:conf/crypto/ChaumCD87,DBLP:conf/stoc/Ben-OrGW88}, initially mostly by the theory community building upon the ideas from the area of distributed algorithms such a the \emph{Byzantine consensus} \cite{DBLP:journals/toplas/LamportSP82}. Its main advantage is that it reduces the trust assumptions in network environments: in a distributed cryptography protocol typically only a certain fraction of participants needs to be honest. This is in contrast with the \emph{centralized} (i.e.: ``non-distributed'') solutions where the users usually need to entirely trust a single participant (often called a \emph{trusted server}). Unfortunately, for a long time distributed cryptography has not been used  massively in practice, mostly due to the fact that the using it introduced a large computational overhead compared to the centralized solutions. In other words: typical users where not ready to pay (in terms of computing time, equipment costs, etc.) for the security benefits of this technology.
+
+This situation has changed recently. One reason for this is a general erosion of trust in single-server solutions, partly due to Edward Snowden's revelations \cite{enwiki:1029775076}, and partly because of cases like the \emph{Facebook-Cambridge Analytica data scandal} \cite{enwiki:1029165846} which led to growing understanding that the centralized solutions give too much power to the operators of the servers.
+
+ \emph{Blockchain technology}, introduced around one decade ago by a pseudonymous author in \cite{nakamoto2008bitcoin}, revolutionized the way the society thinks about the 
+
 The group will to a large extend build upon the results of the basic research 
 by moving them closer to real-life applications.
 
+Proof of concept
+
 Collaboration
+
 
 
 
@@ -35,7 +54,13 @@ Collaboration
 
 \section{Real life side-channel security of blockchain wallets}
 
+
 \section{Education}
+
+
+
+\printbibliography
+
 
 
 \end{document}
